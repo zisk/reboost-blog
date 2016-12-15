@@ -2,7 +2,7 @@ language: python
 python:
 - '3.3'
 before_install:
-- pip install -r requirements
+- pip install -r requirements.txt
 - git clone https://github.com/zisk/blue-penguin.git
 - pelican install ./blue-penguin
 script: make html

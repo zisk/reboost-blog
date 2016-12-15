@@ -4,5 +4,5 @@ python:
 before_install:
 - pip install -r requirements.txt
 - git clone https://github.com/zisk/blue-penguin.git
-- pelican install ./blue-penguin
+- pelican-themes -i ./blue-penguin
 script: make html

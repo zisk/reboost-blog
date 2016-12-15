@@ -6,3 +6,12 @@ before_install:
 - git clone https://github.com/zisk/blue-penguin.git
 - pelican-themes -i ./blue-penguin
 script: make html
+deploy:
+  provider: s3
+  access_key_id: $AWS_ACCESS_KEY
+  secret_access_key: $AWS_SECRET_KEY
+  region: us-east-1
+  bucket: "blog.reboost.net"
+  skip_cleanup: true
+  local_dir: output
+  

@@ -5,7 +5,7 @@ before_install:
 - pip install -r requirements.txt
 - git clone https://github.com/zisk/blue-penguin.git
 - pelican-themes -i ./blue-penguin
-script: make html
+script: pelican -s publishconf.py content 
 deploy:
   provider: s3
   access_key_id: $AWS_ACCESS_KEY

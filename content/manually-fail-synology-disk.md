@@ -1,6 +1,6 @@
 Title: Manually Removing a Disk from a Synology RAID
 Date: 2017-01-07 17:00
-Category: RAID, Synology, mdadm
+Tags: RAID, Synology, mdadm
 
 In rearranging my storage configuration in my homelab, I ran into a situation where I wanted to redo the layout of a fully provisioned Synology NAS. In this case, all disks were used in a single RAID 6 array, giving a two disk fault tolerance. I had already cleared off the majority of the data, with just enough left over to fit on a single disk from the array. I figured the easiest solution would be to remove a disk from the array, move the data there, then rebuild with a different configuration. Luckily, Synology uses [mdadm](https://linux.die.net/man/8/mdadm) under the hood in basic RAID types (their [SHR](https://www.synology.com/en-us/knowledgebase/DSM/tutorial/Storage/What_is_Synology_Hybrid_RAID_SHR) may be different, I haven't looked into it yet). Here's how to remove a disk.
 

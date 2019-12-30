@@ -1,6 +1,6 @@
 language: python
 python:
-- '3.3'
+- '3.7'
 before_install:
 - pip install -r requirements.txt
 - git clone https://github.com/zisk/blue-penguin.git

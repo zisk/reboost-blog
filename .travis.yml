@@ -3,7 +3,7 @@ python:
 - '3.7'
 before_install:
 - pip install -r requirements.txt
-- git clone https://github.com/zisk/blue-penguin.git
+- git clone https://github.com/jody-frankowski/blue-penguin.git
 - pelican-themes -i ./blue-penguin
 script: pelican -s publishconf.py content 
 deploy:

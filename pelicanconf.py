@@ -34,7 +34,7 @@ DEFAULT_PAGINATION = 10
 # Uncomment following line if you want document-relative URLs when developing
 #RELATIVE_URLS = True
 
-THEME = 'blue-penguin'
+THEME = 'pelican-themes/blue-penguin'
 
 ARTICLE_URL='{slug}'
 ARTICLE_SAVE_AS='{slug}/index.html'

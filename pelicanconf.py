@@ -44,9 +44,9 @@ PAGE_SAVE_AS = 'pages/{slug}/index.html'
 ABOUT_URL = 'about'
 ABOUT_SAVE_AS = 'about/index.html'
 
-MENU_INTERNAL_PAGES = (
-   ('About', ABOUT_URL, ABOUT_SAVE_AS),
-)
+# MENU_INTERNAL_PAGES = (
+#    ('About', ABOUT_URL, ABOUT_SAVE_AS),
+# )
 
 STATIC_PATHS = ['images', 'extra/robots.txt']
 
